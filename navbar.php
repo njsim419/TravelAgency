@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg light" style="background-color: #e3f2fd;">
-  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
     <a class="navbar-brand" href="#"><i class="fas fa-home"></i>Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,23 +25,23 @@
           <a class="nav-link" href="https://www.google.com/flights"><i class="fas fa-plane-departure"></i>Flights</a>
         </li>
         <li class="nav-item active dropdown">
-          <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>
-        Account
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt"></i>Sign-In</a>
-          <a class="dropdown-item" href="#"><i class="fas fa-user-plus"></i>Register</a>
-        </div>
-        </li>
-        <li class="nav-item active dropdown">
-          <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-phone"></i>
-        Support
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-phone"></i>
+          Support
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Contact Us</a>
           <a class="dropdown-item" href="#"></a>
         </div>
         </li>
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>
+          Account
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt"></i>Sign-In</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-user-plus"></i>Register</a>
+          </div>
+          </li>
       </ul>
     </div>
   </nav>

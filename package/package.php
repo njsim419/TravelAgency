@@ -1,12 +1,13 @@
 <?php
-	include_once("pop.php");
+	include_once("../pop.php");
+	include ("../navbar.php");
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Packages</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -17,14 +18,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <style>
         body {
-            background-image: url("1890.jpg");
+            background-image: url("2100.jpg");
             background-size: cover;
             background-attachment: fixed;
         }
 
         .pos {
-            padding-left: 2%;
-            padding-right: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
         }
 
         h3 {
@@ -44,16 +45,16 @@
         }
 
         .slide {
-            padding-left: 15%;
-            padding-right: 15%;
+            padding-left: 5%;
+            padding-right: 5%;
         }
 
         .carousel-control-prev {
-            margin-left: 10%;
+            margin-left: 4%;
         }
 
         .carousel-control-next {
-            margin-right: 10%;
+            margin-right: 4%;
         }
 
         /* ---------------------------*/
@@ -121,7 +122,6 @@
 </head>
 
 <body>
-    <br />
     <div class="slides">
         <div id="demo" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
@@ -189,17 +189,38 @@
                     $row = mysqli_fetch_assoc($result);
                     print ($row["PkgDesc"]);                    
                     ?>
-                    <p>
+                    </p>
                     <?php   
                     $result = mysqli_query($dbh, "SELECT PkgStartDate, PkgEndDate, PkgDesc, PkgBasePrice FROM packages WHERE PackageId = 1");
+                    $dbTimeStart = date ("d/m/Y", $row["PkgStartDate"]); 
+                    $dbTimeEnd = date ("d/m/Y", $row["PkgEndDate"]); 
+                    $realtime = date("d/m/Y");
+                  
+                    
                     $row = mysqli_fetch_assoc($result);
-                    print ("Start Date: " . $row["PkgStartDate"] . "<br />");
-                    print ("End Date: " . $row["PkgEndDate"] . "<br />"); 
+                      if($dbTimeStart >= $realtime){
+                       print ("Start Date: " . $row["PkgStartDate"] . "<br />");
+                    }else{
+                            print ("Start Date: <span style='color:red; font-weight:bold;'>" . $row["PkgStartDate"] . "</span><br />"); 
+                    }
+                        if($dbTimeEnd >= $realtime){
+                       print ("End Date: " . $row["PkgEndDate"] . "<br />");
+                    }else{
+                            print ("End Date: <span style='color:red; font-weight:bold;'>" . $row["PkgEndDate"] . "</span><br />"); 
+                    }
                     print ("Price: " . $row["PkgBasePrice"] . "<br />");
                     ?>
                     </p>
                     <p>Review: &#9733 &#9733 &#9733 &#9733 &#9733</p>
-                    <p><button class="button">Book</button></p>
+                    <?php 
+                    if($dbTime >= $realtime){
+                        echo '<p><button class="button">Book</button></p>';
+                    }
+                    else{
+                        echo '<p><i class="far fa-frown-open"></i> Oh! You missed out on a great deal. Don\'t miss the next one. Faster next time.</p>';
+                    }
+                    ?>
+                    
                     </div>
                 </div>
             </div>
@@ -219,18 +240,38 @@
                     $result = mysqli_query($dbh, "SELECT PkgStartDate, PkgEndDate, PkgDesc, PkgBasePrice FROM packages WHERE PackageId = 2");
                     $row = mysqli_fetch_assoc($result);
                     print ($row["PkgDesc"]);                    
-                    ?><br /><br />
-                    <p>
+                    ?><br />
+                      </p>
                     <?php   
                     $result = mysqli_query($dbh, "SELECT PkgStartDate, PkgEndDate, PkgDesc, PkgBasePrice FROM packages WHERE PackageId = 2");
+                    $dbTimeStart = date ("Y-m-d H:i:s", $row["PkgStartDate"]); 
+                    $dbTimeEnd = date ("Y-m-d H:i:s", $row["PkgEndDate"]); 
+                    $realtime = date("Y-m-d H:i:s");
+                  
+                    
                     $row = mysqli_fetch_assoc($result);
-                    print ("Start Date: " . $row["PkgStartDate"] . "<br />");
-                    print ("End Date: " . $row["PkgEndDate"] . "<br />"); 
+                      if($dbTimeStart >= $realtime){
+                       print ("Start Date: " . $row["PkgStartDate"] . "<br />");
+                    }else{
+                            print ("Start Date: <span style='color:red; font-weight:bold;'>" . $row["PkgStartDate"] . "</span><br />"); 
+                    }
+                        if($dbTimeEnd >= $realtime){
+                       print ("End Date: " . $row["PkgEndDate"] . "<br />");
+                    }else{
+                            print ("End Date: <span style='color:red; font-weight:bold;'>" . $row["PkgEndDate"] . "</span><br />"); 
+                    }
                     print ("Price: " . $row["PkgBasePrice"] . "<br />");
                     ?>
                     </p>
                     <p>Review: &#9733 &#9733 &#9733 &#9733 &#9733</p>
-                    <p><button class="button">Book</button></p>
+                    <?php 
+                    if($dbTime >= $realtime){
+                        echo '<p><button class="button">Book</button></p>';
+                    }
+                    else{
+                        echo '<p><i class="far fa-frown-open"></i> Oh! You missed out on a great deal. Don\'t miss the next one. Faster next time.</p>';
+                    }
+                    ?>
                     </div>
                 </div>
             </div>
@@ -250,20 +291,41 @@
                     $row = mysqli_fetch_assoc($result);
                     print ($row["PkgDesc"]);                    
                     ?><br /><br />
-                    <p>
+                       </p>
                     <?php   
                     $result = mysqli_query($dbh, "SELECT PkgStartDate, PkgEndDate, PkgDesc, PkgBasePrice FROM packages WHERE PackageId = 3");
+                    $dbTimeStart = date ("Y-m-d H:i:s", $row["PkgStartDate"]); 
+                    $dbTimeEnd = date ("Y-m-d H:i:s", $row["PkgEndDate"]); 
+                    $realtime = date("Y-m-d H:i:s");
+                  
+                    
                     $row = mysqli_fetch_assoc($result);
-                    print ("Start Date: " . $row["PkgStartDate"] . "<br />");
-                    print ("End Date: " . $row["PkgEndDate"] . "<br />"); 
+                      if($dbTimeStart >= $realtime){
+                       print ("Start Date: " . $row["PkgStartDate"] . "<br />");
+                    }else{
+                            print ("Start Date: <span style='color:red; font-weight:bold;'>" . $row["PkgStartDate"] . "</span><br />"); 
+                    }
+                        if($dbTimeEnd >= $realtime){
+                       print ("End Date: " . $row["PkgEndDate"] . "<br />");
+                    }else{
+                            print ("End Date: <span style='color:red; font-weight:bold;'>" . $row["PkgEndDate"] . "</span><br />"); 
+                    }
                     print ("Price: " . $row["PkgBasePrice"] . "<br />");
                     ?>
                     </p>
                     <p>Review: &#9733 &#9733 &#9733 &#9733 &#9733</p>
-                    <p><button class="button">Book</button></p>
+                    <?php 
+                    if($dbTime >= $realtime){
+                        echo '<p><button class="button">Book</button></p>';
+                    }
+                    else{
+                        echo '<p><i class="far fa-frown-open"></i> Oh! You missed out on a great deal. Don\'t miss the next one. Faster next time.</p>';
+                    }
+                    ?>
                     </div>
                 </div>
             </div>
+            
             <div class="column">
                 <div class="card">
                     <img src="eu.jpg" alt="" style="width:100%" margin:auto;>
@@ -279,24 +341,49 @@
                     $result = mysqli_query($dbh, "SELECT PkgStartDate, PkgEndDate, PkgDesc, PkgBasePrice FROM packages WHERE PackageId = 4");
                     $row = mysqli_fetch_assoc($result);
                     print ($row["PkgDesc"]);                    
-                    ?><br /><br />
-                    <p>
+                    ?>
+                       </p>
                     <?php   
                     $result = mysqli_query($dbh, "SELECT PkgStartDate, PkgEndDate, PkgDesc, PkgBasePrice FROM packages WHERE PackageId = 4");
+                    $dbTimeStart = date ("Y-m-d H:i:s", $row["PkgStartDate"]); 
+                    $dbTimeEnd = date ("Y-m-d H:i:s", $row["PkgEndDate"]); 
+                    $realtime = date("Y-m-d H:i:s");
+                    
                     $row = mysqli_fetch_assoc($result);
-                    print ("Start Date: " . $row["PkgStartDate"] . "<br />");
-                    print ("End Date: " . $row["PkgEndDate"] . "<br />"); 
+                      if($dbTimeStart >= $realtime){
+                       print ("Start Date: " . $row["PkgStartDate"] . "<br />");
+                    }else{
+                            print ("Start Date: <span style='color:red; font-weight:bold;'>" . $row["PkgStartDate"] . "</span><br />"); 
+                    }
+                        if($dbTimeEnd >= $realtime){
+                       print ("End Date: " . $row["PkgEndDate"] . "<br />");
+                    }else{
+                            print ("End Date: <span style='color:red; font-weight:bold;'>" . $row["PkgEndDate"] . "</span><br />"); 
+                    }
                     print ("Price: " . $row["PkgBasePrice"] . "<br />");
                     ?>
                     </p>
                     <p>Review: &#9733 &#9733 &#9733 &#9733 &#9733</p>
-                    <p><button class="button">Book</button></p>
+                    <?php 
+                    if($dbTime >= $realtime){
+                        echo '<p><button class="button">Book</button></p>';
+                    }
+                    else{
+                        echo '<p><i class="far fa-frown-open"></i> Oh! You missed out on a great deal. Don\'t miss the next one. Faster next time.</p>';
+                    }
+                    ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    !!!!!!!!!!!!!!!!!#%$$%#%$%^^$%^$#^%^#^#%
+    <?php
+	include ("../footer.php");
+    ?>
 </body>
 
 </html>

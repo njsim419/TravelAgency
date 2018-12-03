@@ -9,13 +9,14 @@
 	
 	include_once("functions.php");
 	$dbh = dbconnect();
-	$firstName = $_REQUEST["AgtFirstName"];
-	$sql = "select * from Agents where AgtFirstName='$firstName'";
-	$result = mysqli_query($dbh, $sql);
-	$row=mysqli_fetch_array($result);
-
-
-
+	
+	$sql = "select AgtLastname from Agents where AgtFirstName=?";
+	$stmt = mysqli_prepare($dbh, $sql);
+	mysqli_stmt_bind_param($stmt, "i", $_REQUEST["AgtFirstName"]);
+	mysqli_stmt_execute($stmt);
+	$result = mysqli_stmt_get_result($stmt);
+	$AgtLastName = mysqli_fetch_array($result);
+	
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +27,7 @@
 	<body>
 		<form method="post" action="day11example2-2.php">
 			Product Id:<br />
-			Last Name:<input type="text" name="AgtLastName" value="<?php print($row['AgtLastName']); ?>" /><br />
+			Last Name:<input type="text" name="AgtLastName" value="<?php print($AgtLastName[0]); ?>" /><br />
 		</form>
 	</body>
 </html>

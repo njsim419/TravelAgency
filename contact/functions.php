@@ -4,7 +4,7 @@
 	function dbconnect()
 	{
 		global $host, $user, $pwd, $dbname;
-		$dbh = mysqli_connect($host, $user, $pwd, $dbname);
+		$dbh = mysqli_connect("localhost", "travel_user", "password123", "travel_travelexperts");
 		if (!$dbh)
 		{
 			print("Connection failed, call tech support");

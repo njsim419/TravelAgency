@@ -1,0 +1,110 @@
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  include_once(pop.php): failed to open stream: No such file or directory in /home/travel/public_html/package/package.php on line 2
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  include_once(): Failed opening 'pop.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/travel/public_html/package/package.php on line 2
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  include(header.php): failed to open stream: No such file or directory in /home/travel/public_html/package/package.php on line 3
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  include(header.php): failed to open stream: No such file or directory in /home/travel/public_html/package/package.php on line 3
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/travel/public_html/package/package.php on line 3
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 182
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 182
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 183
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 188
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 188
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 189
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 194
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 194
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 200
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 216
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 234
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 234
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 235
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 240
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 240
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 241
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 246
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 246
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 252
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 268
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 284
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 284
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 285
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 290
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 290
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 291
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 296
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 296
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 302
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 318
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 334
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 334
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 335
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 340
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 340
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 341
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 346
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 346
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 352
+[28-Nov-2018 14:16:18 America/New_York] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 368
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  include(footer.php): failed to open stream: No such file or directory in /home/travel/public_html/package/package.php on line 381
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  include(footer.php): failed to open stream: No such file or directory in /home/travel/public_html/package/package.php on line 381
+[28-Nov-2018 14:16:18 America/New_York] PHP Warning:  include(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/travel/public_html/package/package.php on line 381
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  include_once(pop.php): failed to open stream: No such file or directory in /home/travel/public_html/package/package.php on line 2
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  include_once(): Failed opening 'pop.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/travel/public_html/package/package.php on line 2
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  include(header.php): failed to open stream: No such file or directory in /home/travel/public_html/package/package.php on line 3
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  include(header.php): failed to open stream: No such file or directory in /home/travel/public_html/package/package.php on line 3
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/travel/public_html/package/package.php on line 3
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 182
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 182
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 183
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 188
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 188
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 189
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 194
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 194
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 200
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 216
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 234
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 234
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 235
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 240
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 240
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 241
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 246
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 246
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 252
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 268
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 284
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 284
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 285
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 290
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 290
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 291
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 296
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 296
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 302
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 318
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 334
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 334
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 335
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 340
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 340
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 341
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbh in /home/travel/public_html/package/package.php on line 346
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/travel/public_html/package/package.php on line 346
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/travel/public_html/package/package.php on line 352
+[28-Nov-2018 14:16:37 America/New_York] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 368
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  include(footer.php): failed to open stream: No such file or directory in /home/travel/public_html/package/package.php on line 381
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  include(footer.php): failed to open stream: No such file or directory in /home/travel/public_html/package/package.php on line 381
+[28-Nov-2018 14:16:37 America/New_York] PHP Warning:  include(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/travel/public_html/package/package.php on line 381
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Warning:  include(footer): failed to open stream: No such file or directory in /home/travel/public_html/navbar.php on line 87
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Warning:  include(): Failed opening 'footer' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/travel/public_html/navbar.php on line 87
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  A non well formed numeric value encountered in /home/travel/public_html/package/package.php on line 195
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  A non well formed numeric value encountered in /home/travel/public_html/package/package.php on line 196
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 216
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  A non well formed numeric value encountered in /home/travel/public_html/package/package.php on line 247
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  A non well formed numeric value encountered in /home/travel/public_html/package/package.php on line 248
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 268
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  A non well formed numeric value encountered in /home/travel/public_html/package/package.php on line 297
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  A non well formed numeric value encountered in /home/travel/public_html/package/package.php on line 298
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 318
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  A non well formed numeric value encountered in /home/travel/public_html/package/package.php on line 348
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  A non well formed numeric value encountered in /home/travel/public_html/package/package.php on line 349
+[30-Nov-2018 18:23:30 America/Edmonton] PHP Notice:  Undefined variable: dbTime in /home/travel/public_html/package/package.php on line 368

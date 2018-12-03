@@ -4,7 +4,7 @@
 	$urls["Apple"] = "http://apple.com";
 	
 	$host = "localhost";
-	$user = "root";
-	$pwd = "";
-	$dbname = "travelexperts";
+	$user = "travel_user";
+	$pwd = "password123";
+	$dbname = "travel_travelexperts";
 ?>

@@ -1,22 +1,165 @@
+/*
+   Author:  Manish Sudani, Sheila Zhao and Nicholas Sim
+   Course:  CPRG210
+   Assignment:  Project Workshop1
+*/
+
 .jumbotron {
     background-image: url("https://images.pexels.com/photos/461797/pexels-photo-461797.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0;
 }
+
 .display-3 {
     color: whitesmoke;
     text-shadow: 2px 2px black;
     font-family: 'PT Sans', sans-serif;
     text-align: center;
 }
-h1 #feat{
+
+h1 #feat {
     font-family: 'PT Sans', sans-serif;
     text-align: center;
 }
+
 .home {
     background-color: #f5f5f5;
 }
-a .featurette-divider{
+
+a .featurette-divider {
     color: rgb(3, 72, 77);
+}
+
+body {
+    background-image: url("2100.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* The CSS for the package page*/
+.pos {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+ .bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+  
+}
+
+.carousel-control-prev {
+    margin-left: 0px;
+}
+
+.carousel-control-next {
+    margin-right: 0px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+/* ------Slides---------------*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.container {
+    padding: 0 16px;
+    min-height:20%;
+    max-height:20%;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: #1a1a00;
+}
+.button.bottom-align-text.btn-danger:hover{
+    background-color:#dc3545;
+}
+.btn-danger:hover, .btn-danger:active, .btn-danger:focus {
+    background-color:#dc3545;
+}
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: royalblue;
+    font: bold 17px Arimo, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/*Package details*/
+#bkcon {
+    background-image: url("pexels-photo-1054220.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+}
+
+/*booking page*/
+#pkgsel {
+    background-image: url("https://images.pexels.com/photos/1054220/pexels-photo-1054220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+}
+
+#pkgsel2 {
+      font: bold 17px Arimo, sans-serif;
 }
